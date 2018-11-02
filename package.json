@@ -1,0 +1,33 @@
+{
+  "name": "craft-3-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgrigg/craft-3-boilerplate.git"
+  },
+  "author": "Derrick Grigg <derrick@dgrigg.com> (http://www.dgrigg.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgrigg/craft-3-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dgrigg/craft-3-boilerplate#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "eslint": "^5.8.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.14",
+    "laravel-mix-eslint": "^0.1.2",
+    "laravel-mix-tailwind": "^0.1.0",
+    "tailwindcss": "^0.7.0"
+  }
+}

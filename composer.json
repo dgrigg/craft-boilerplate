@@ -1,7 +1,13 @@
 {
   "require": {
     "craftcms/cms": "^3.0.0",
-    "vlucas/phpdotenv": "^2.4.0"
+    "vlucas/phpdotenv": "^2.4.0",
+    "verbb/super-table": "2.0.10",
+    "craftcms/redactor": "^1.0",
+    "sebastianlenz/linkfield": "1.0.10",
+    "nystudio107/craft-seomatic": "^3.1",
+    "spicyweb/craft-neo": "2.0.1",
+    "firstborn/migrationmanager": "v3.0.13"
   },
   "autoload": {
     "psr-4": {
