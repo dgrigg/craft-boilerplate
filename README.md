@@ -1,7 +1,7 @@
 # Craft 3 Project Setup
+This is a basic Craft 3 with common plugins and frontend resources I use.
 
-
-##Craft Plugins
+## Craft Plugins
 - SuperTable
 - Redactor
 - LinkField
