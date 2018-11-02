@@ -1,4 +1,17 @@
 {
+  "name": "dgrigg/craft-3-boilerplate",
+  "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
+  "version" : "1.0.0",
+  "authors": [
+    {
+      "name": "Derrick Grigg",
+      "email": "derrick@dgrigg.com"
+    }
+  ],
+  "support": {
+    "docs": "https://github.com/dgrigg/craft-3-boilerplate/blob/master/README.md",
+    "issues": "https://github.com/dgrigg/craft-3-boilerplate/issues"
+  },
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
