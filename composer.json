@@ -12,6 +12,8 @@
     "docs": "https://github.com/dgrigg/craft-3-boilerplate/blob/master/README.md",
     "issues": "https://github.com/dgrigg/craft-3-boilerplate/issues"
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
