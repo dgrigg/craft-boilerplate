@@ -4,3 +4,6 @@
 node_modules
 .DS_Store
 
+web/cpresources
+web/uploads
+web/cache
