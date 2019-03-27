@@ -1,7 +1,7 @@
 {
   "name": "dgrigg/craft-3-boilerplate",
   "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "authors": [
     {
       "name": "Derrick Grigg",
