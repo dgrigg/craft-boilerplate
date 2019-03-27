@@ -1,7 +1,7 @@
 {
   "name": "dgrigg/craft-3-boilerplate",
   "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     {
       "name": "Derrick Grigg",
@@ -15,14 +15,15 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.0.0",
+    "craftcms/cms": "^3.1.19",
     "vlucas/phpdotenv": "^2.4.0",
-    "verbb/super-table": "2.0.10",
+    "verbb/super-table": "^2.1.16",
+    "verbb/navigation": "^1.1.11",
     "craftcms/redactor": "^1.0",
-    "sebastianlenz/linkfield": "1.0.10",
-    "nystudio107/craft-seomatic": "^3.1",
-    "spicyweb/craft-neo": "2.0.1",
-    "firstborn/migrationmanager": "v3.0.13"
+    "sebastianlenz/linkfield": "^1.0.17",
+    "nystudio107/craft-seomatic": "^3.1.46",
+    "spicyweb/craft-neo": "^2.2.8",
+    "dgrigg/craft-migration-assistant": "^3.1.0.1"
   },
   "autoload": {
     "psr-4": {
