@@ -7,3 +7,5 @@ node_modules
 web/cpresources
 web/uploads
 web/cache
+web/*.css
+web/*.js

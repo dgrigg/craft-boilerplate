@@ -1,7 +1,7 @@
 {
   "name": "dgrigg/craft-3-boilerplate",
   "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "authors": [
     {
       "name": "Derrick Grigg",
@@ -15,7 +15,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.1.28",
+    "craftcms/cms": "^3.2.6",
     "vlucas/phpdotenv": "^2.4.0",
     "verbb/super-table": "^2.1.16",
     "verbb/navigation": "^1.1.11",

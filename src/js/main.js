@@ -1,3 +1,5 @@
+import "../css/styles.scss";
+
 import $ from "jquery";
 import Home from "./modules/home";
 
