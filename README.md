@@ -25,5 +25,5 @@ https://tailwindcss.com
 ## Setup
 
 1. run `composer create-project dgrigg/craft-3-boilerplate [project root] --prefer-source`
-2. cd into the project root and run `npm install`
+2. cd into the project root and run `yarn install`
 3. happy coding
