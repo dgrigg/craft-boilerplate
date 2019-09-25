@@ -9,3 +9,4 @@ web/uploads
 web/cache
 web/*.css
 web/*.js
+web/build

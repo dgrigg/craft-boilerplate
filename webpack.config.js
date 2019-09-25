@@ -22,7 +22,7 @@ module.exports = {
   },
   output: {
     publicPath: "/build/",
-    path: path.join(__dirname, "./html/build"),
+    path: path.join(__dirname, "./web/build"),
     filename: "[name].[hash].js",
   },
   module: {
