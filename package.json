@@ -22,10 +22,11 @@
   "homepage": "https://github.com/dgrigg/craft-3-boilerplate#readme",
   "dependencies": {
 
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "latest",
     "axios": "^0.18.0",
     "jquery": "^3.3.1",
-    "tailwindcss": "^1.0.5"
+    "tailwindcss": "^1.0.5",
+    "tailwindcss-aspect-ratio": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -44,7 +45,6 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "shelljs": "^0.8.3",
-    "tailwindcss-aspect-ratio": "^2.0.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-manifest-plugin": "^2.0.4",
