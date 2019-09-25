@@ -1,7 +1,7 @@
 {
   "name": "dgrigg/craft-3-boilerplate",
   "description": "Craft 3 boilerplate setup, includes basic js/css/webpack setup",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Derrick Grigg",
@@ -15,15 +15,21 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.2.6",
-    "vlucas/phpdotenv": "^2.4.0",
-    "verbb/super-table": "^2.1.16",
-    "verbb/navigation": "^1.1.11",
-    "craftcms/redactor": "^1.0",
-    "sebastianlenz/linkfield": "^1.0.17",
-    "nystudio107/craft-seomatic": "^3.1.46",
-    "spicyweb/craft-neo": "^2.2.8",
-    "dgrigg/craft-migration-assistant": "^3.1.1"
+    "craftcms/cms": "3.3.4",
+    "craftcms/contact-form": "2.2.5",
+    "craftcms/redactor": "2.3.3.2",
+    "dgrigg/craft-migration-assistant": "^3.1.1",
+    "nystudio107/craft-imageoptimize": "^1.6",
+    "nystudio107/craft-retour": "3.1.13",
+    "nystudio107/craft-seomatic": "3.1.50",
+    "nystudio107/craft-twigpack": "^1.1",
+    "sebastianlenz/linkfield": "1.0.19",
+    "spicyweb/craft-neo": "2.5.1",
+    "superbig/craft-entry-instructions": "1.0.4",
+    "verbb/navigation": "1.1.11",
+    "verbb/super-table": "2.1.20",
+    "vlucas/phpdotenv": "^2.4.0"
+
   },
   "autoload": {
     "psr-4": {

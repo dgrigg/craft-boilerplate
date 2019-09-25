@@ -7,6 +7,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     "./src/**/*.vue",
     "./src/**/*.jsx",
     "./web/test.html",
+    "./templates/**/*.html",
+    "./templates/**/*.twig",
     // etc.
   ],
 

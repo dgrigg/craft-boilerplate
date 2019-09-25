@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable global-require */
 const webpack = require("webpack");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackNotifierPlugin = require("webpack-notifier");
-const WebpackShellPlugin = require("webpack-shell-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require("path");
 
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
     main: "./js/main.js",
   },
   output: {
-    publicPath: "/",
-    path: path.join(__dirname, "./web"),
+    publicPath: "/build/",
+    path: path.join(__dirname, "./html/build"),
     filename: "[name].[hash].js",
   },
   module: {
@@ -53,20 +53,35 @@ module.exports = {
       },
       {
         test: /\.(woff2?|ttf|eot|svg)(\?.*)?$/i,
+        exclude: [/images/],
         use: "file-loader?name=fonts/[name].[hash].[ext]",
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: "file-loader?name=images/[name].[hash].[ext]",
+      }
     ],
   },
 
   plugins: [
     new WebpackNotifierPlugin({ alwaysNotify: true }),
 
+    new CleanWebpackPlugin({
+      protectWebpackAssets: true,
+      cleanStaleWebpackAssets: false,
+      cleanAfterEveryBuildPatterns: ['*.css', '*.js'],
+    }),
+
+    new CopyPlugin([
+      { from: 'assets/images/', to: 'images', flatten:true }
+    ], {copyUnmodified: true}),
+
     // inject into files
     new webpack.ProvidePlugin({
       jQuery: "jquery",
       jquery: "jquery",
       $: "jquery",
-      "window.jQuery": "jQuery",
+      "window.jQuery": "jQuery"
     }),
 
     new MiniCssExtractPlugin({
@@ -76,24 +91,8 @@ module.exports = {
       chunkFilename: "[id].css",
     }),
 
-    new CleanWebpackPlugin({
-      protectWebpackAssets: true,
-      cleanOnceBeforeBuildPatterns: [],
-      cleanAfterEveryBuildPatterns: [
-        "*.js",
-        "*.css",
-        "*.map",
-        "!uploads/**",
-        "!assets/**",
-      ],
-    }),
-
     new ManifestPlugin({
       filter: ({ name }) => name.endsWith(".js") || name.endsWith(".css"),
-    }),
-
-    new WebpackShellPlugin({
-      onBuildEnd: ["yarn run copy"],
     }),
   ],
 
