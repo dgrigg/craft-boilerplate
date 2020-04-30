@@ -24,7 +24,7 @@
     "autoprefixer": "latest",
     "axios": "^0.18.0",
     "body-scroll-lock": "^2.6.4",
-    "jquery": "^3.4",
+    "jquery": "^3.5",
     "tailwindcss": "^1.0.5",
     "tailwindcss-aspect-ratio": "^2.0.0",
     "tailwindcss-transitions": "^2.1.0"
