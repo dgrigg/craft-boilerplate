@@ -26,7 +26,7 @@ export default class Main {
       modules.forEach(m => {
         try {
           // Instantiate their associated class
-          this.classMapping[m](element);
+          const mod = new this.classMapping[m](element);
         } catch (err) {
           // console.log(err);
         }
