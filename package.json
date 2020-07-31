@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/dgrigg/craft-3-boilerplate#readme",
   "dependencies": {
-    "autoprefixer": "latest",
-    "axios": "^0.18.0",
+    "autoprefixer": "^9.8.6",
     "body-scroll-lock": "^2.6.4",
     "jquery": "^3.4",
     "tailwindcss": "^1.0.5",

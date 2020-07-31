@@ -1,5 +1,11 @@
 module.exports = {
-  important: true,
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+    './templates/**/*.html',
+    './templates/**/*.twig',
+  ],
   theme: {
     fontFamily: {
       display: ["Gilroy", "sans-serif"],
