@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+
+//add custom css here
+
+//for AlpineJs
+[x-cloak] {
+  display: none !important;
+}
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+
