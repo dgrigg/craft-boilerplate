@@ -25,6 +25,13 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        'aliases' => [
+          '@web' =>  getenv('DEFAULT_SITE_URL'),
+          '@webroot' => dirname(__DIR__) . '/web',
+          '@assetBaseUrl' => '@web/uploads',
+          '@assetBasePath' => '@webroot/uploads',
+        ],
     ],
 
     // Dev environment settings

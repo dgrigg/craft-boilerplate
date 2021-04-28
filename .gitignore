@@ -10,3 +10,5 @@ web/cache
 web/*.css
 web/*.js
 web/build
+
+yarn-error.log

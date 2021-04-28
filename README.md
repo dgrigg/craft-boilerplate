@@ -9,7 +9,6 @@ This is a basic Craft 3 with common plugins and frontend resources I use.
 - LinkField
 - SEO Matic
 - NEO
-- Migration Manager
 
 ## Frontend
 
@@ -31,4 +30,10 @@ https://tailwindcss.com
 4. setup Craft https://docs.craftcms.com/v3/installation.htm
 5. cd into the project root and run `yarn install`
 6. happy coding
+
+
+## Useful Links
+
+Asset Volume Setup for S3
+https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms
 

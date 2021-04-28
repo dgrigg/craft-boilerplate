@@ -1,7 +1,15 @@
-import "../css/styles.scss";
+import "../css/styles.css";
+
+import 'alpinejs'
 
 import $ from "jquery";
 import Home from "./modules/home";
+
+
+// setup for AlpineJs
+// import navigationBar from "./components/NavigationBar";
+//window.navigationBar = navigationBar;
+
 
 export default class Main {
   constructor() {
