@@ -37,6 +37,7 @@
     "laravel-mix-clean": "^0.1.0",
     "laravel-mix-make-file-hash": "^2.2.0",
     "laravel-mix-postcss-config": "^1.4.0",
+    "mix-tailwindcss": "^1.3.0",
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "postcss-loader": "^5.0.0",
