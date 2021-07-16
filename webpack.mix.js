@@ -7,7 +7,6 @@ mix
   .setPublicPath("web/build")
   .js("src/js/main.js", "js")
   .postCss("src/css/styles.css", "css")
-  .extract()
   .sourceMaps();
 
 if (mix.inProduction()) {
@@ -18,6 +17,8 @@ if (mix.inProduction()) {
       const convertToFileHash = require("laravel-mix-make-file-hash");
       convertToFileHash({
         publicPath: "web/build",
+        blacklist: ["assets"],
+        keepBlacklistedEntries: true,
         manifestFilePath: "web/build/mix-manifest.json",
       });
     });

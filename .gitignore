@@ -1,7 +1,8 @@
 /.env
 /.idea
 /vendor
-node_modules
+/node_modules
+/storage
 .DS_Store
 
 web/cpresources
