@@ -23,7 +23,7 @@ https://tailwindcss.com
 
 ## Setup
 
-1. run `composer create-project dgrigg/craft-3-boilerplate [project root] --prefer-source`
+1. run `composer create-project dgrigg/craft-3-boilerplate:v1.2.x [project root]`
 2. create security key `./craft setup/security-key`
 3. install craft `./craft setup`
 4. install plugins `./craft plugin/install ALL`

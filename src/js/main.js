@@ -1,10 +1,8 @@
-import "alpinejs";
+import Alpine from "alpinejs";
 
 window.Alpine = Alpine;
 
 // setup for AlpineJs
-window.projects = component;
-
 Alpine.data("component", component);
 Alpine.start();
 

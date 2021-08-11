@@ -1,19 +1,10 @@
-export default (config) => {
-  return {
-    prop1: true,
-    prop2: 'abc',
+export default () => ({
+  prop1: true,
+  prop2: "abc",
 
-    init() {
+  init() {},
 
-    },
+  func1() {},
 
-    func1() {
-
-    },
-
-    func2() {
-
-    },
-
-  }
-}
+  func2() {},
+});

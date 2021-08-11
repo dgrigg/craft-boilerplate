@@ -7,6 +7,7 @@ mix
   .setPublicPath("web/build")
   .js("src/js/main.js", "js")
   .postCss("src/css/styles.css", "css")
+  .copyDirectory("src/assets", "web/build/assets")
   .sourceMaps();
 
 if (mix.inProduction()) {
