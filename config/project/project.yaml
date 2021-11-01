@@ -1,0 +1,50 @@
+dateModified: 1635778536
+email:
+  fromEmail: derrick@dgrigg.com
+  fromName: Boilerplate
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.6.6
+  navigation:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.21
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.9
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Boilerplate
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,6 @@
+/*add custom css here*/
+
+/* for AlpineJs */
+[x-cloak] {
+  display: none !important;
+}

@@ -10,5 +10,6 @@
   "arrowParens": "avoid",
   "requirePragma": false,
   "insertPragma": false,
-  "proseWrap": "preserve"
+  "proseWrap": "preserve",
+  "twigAlwaysBreakObjects": false
 }

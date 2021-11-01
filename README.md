@@ -12,7 +12,7 @@ This is a basic Craft 3 with common plugins and frontend resources I use.
 
 ## Frontend
 
-Alpine (slim version)
+Alpine
 https://alpinejs.dev/
 
 Axios
@@ -20,6 +20,10 @@ https://github.com/axios/axios
 
 TailwindCss
 https://tailwindcss.com
+
+### Build
+
+ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/js/build/build.js file for the entry points and options. Two primary options are used `--minify` to output minified resources and `--watch` to watch the `./src` and `./templates` directory for changes required a rebuild.
 
 ## Setup
 

@@ -8,8 +8,5 @@ module.exports = {
     },
     extend: {},
   },
-  variants: {
-    opacity: ["responsive", "hover"],
-  },
   plugins: [],
 };

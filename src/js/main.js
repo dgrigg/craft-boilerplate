@@ -1,5 +1,7 @@
 import Alpine from "alpinejs";
 
+import component from "./modules/component";
+
 window.Alpine = Alpine;
 
 // setup for AlpineJs

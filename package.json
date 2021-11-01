@@ -1,15 +1,12 @@
 {
   "name": "craft-3-boilerplate",
-  "version": "1.2.9",
+  "version": "1.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy": "node copy.js",
-    "lint": "eslint src -c .eslintrc.json --ext js,jsx",
-    "dev": "mix",
-    "watch": "mix watch",
-    "hot": "mix watch --hot",
-    "production": "mix --production"
+    "build": "node ./src/js/build/build.js",
+    "watch": "node ./src/js/build/build.js --watch",
+    "production": "node ./src/js/build/build.js --minify"
   },
   "repository": {
     "type": "git",
@@ -24,24 +21,19 @@
   "dependencies": {
     "alpinejs": "^3.1.0",
     "axios": "^0.21.1",
-    "autoprefixer": "^9.8.6",
-    "body-scroll-lock": "^2.6.4",
     "tailwindcss": "^2.1.0",
     "tailwindcss-aspect-ratio": "^2.0.0"
   },
   "devDependencies": {
+    "@deanc/esbuild-plugin-postcss": "^1.0.2",
+    "autoprefixer": "^10.0.2",
+    "chokidar": "^3.5.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^3.2.0",
-    "js-yaml": "^3.13.1",
-    "laravel-mix": "^6.0.18",
-    "laravel-mix-clean": "^0.1.0",
-    "laravel-mix-make-file-hash": "^2.2.0",
-    "laravel-mix-postcss-config": "^1.4.0",
-    "mix-tailwindcss": "^1.3.0",
-    "postcss": "^8.2.13",
+    "esbuild": "^0.13.12",
+    "postcss": "^8.2.14",
     "postcss-import": "^14.0.1",
     "postcss-loader": "^5.0.0",
-    "postcss-nested": "^5.0.5",
-    "prettier-plugin-twig-melody": "^0.4.6"
+    "postcss-nested": "^5.0.5"
   }
 }
