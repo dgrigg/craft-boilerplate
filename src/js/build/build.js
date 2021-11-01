@@ -4,14 +4,17 @@ const postCssPlugin = require("@deanc/esbuild-plugin-postcss");
 const manifestPlugin = require("./manifest.js");
 const chokidar = require("chokidar");
 
-//clean out build directory
-fs.rmdirSync("./web/build", { recursive: true, force: true });
-
 //get args
 var myArgs = process.argv.slice(2);
 
 //build
 const build = async () => {
+  fs.rmdir("./web/build", { recursive: true }, err => {
+    if (err) {
+      throw err;
+    }
+  });
+
   await esbuild
     .build({
       logLevel: "info",

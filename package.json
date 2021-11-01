@@ -28,8 +28,6 @@
     "@deanc/esbuild-plugin-postcss": "^1.0.2",
     "autoprefixer": "^10.0.2",
     "chokidar": "^3.5.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^3.2.0",
     "esbuild": "^0.13.12",
     "postcss": "^8.2.14",
     "postcss-import": "^14.0.1",
