@@ -1,16 +1,23 @@
-dateModified: 1635778536
+dateModified: 1645556411
 email:
   fromEmail: derrick@dgrigg.com
   fromName: Boilerplate
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    3a51c4ef-5f59-44d3-9d0c-642518f9c080: Boilerplate # Boilerplate
+    03c6a97d-758f-44f9-b773-f1b6a8df9590: Common # Common
+    f0d68455-b7b8-440b-9030-9cebe3251626: Boilerplate # Boilerplate
 plugins:
   blitz:
     edition: standard
     enabled: true
-    schemaVersion: 3.6.6
+    licenseKey: F1DIYS679I7O3D60MSJFH92I
+    schemaVersion: 3.10.0
   navigation:
     edition: standard
     enabled: true
+    licenseKey: RXFOW3DM28EBVRZFR0FUBJRD
     schemaVersion: 1.0.21
   redactor:
     edition: standard
@@ -23,7 +30,8 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.9
+    licenseKey: U10ZHS8NJ5EBR4VO9R530LTR
+    schemaVersion: 3.0.11
   super-table:
     edition: standard
     enabled: true
@@ -40,7 +48,7 @@ system:
   edition: solo
   live: true
   name: Boilerplate
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

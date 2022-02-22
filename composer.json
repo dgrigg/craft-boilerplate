@@ -15,15 +15,15 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.7",
-    "craftcms/redactor": "^2.8",
-    "mmikkel/retcon": "^2.2",
-    "nystudio107/craft-seomatic": "^3.3",
-    "nystudio107/craft-twigpack": "^1.2",
-    "putyourlightson/craft-blitz": "^3.8",
+    "craftcms/cms": "3.7.27.2",
+    "craftcms/redactor": "2.10.3",
+    "mmikkel/retcon": "2.3.0",
+    "nystudio107/craft-seomatic": "3.4.26",
+    "nystudio107/craft-twigpack": "1.2.15",
+    "putyourlightson/craft-blitz": "3.11.1",
     "sebastianlenz/linkfield": "^1.0",
-    "verbb/navigation": "^1.4",
-    "verbb/super-table": "^2.6",
+    "verbb/navigation": "1.4.24",
+    "verbb/super-table": "2.6.8",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {

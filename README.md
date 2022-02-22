@@ -33,7 +33,8 @@ ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/
 4. install plugins `./craft plugin/install ALL`
 5. setup Craft https://docs.craftcms.com/v3/installation.htm
 6. cd into the project root and run `yarn install`
-7. happy coding
+7. update craft and all plugins `./craft update all`
+8. happy coding
 
 ## Useful Links
 
