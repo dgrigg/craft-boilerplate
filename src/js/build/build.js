@@ -9,7 +9,7 @@ var myArgs = process.argv.slice(2);
 
 //build
 const build = async () => {
-  fs.rmdir("./web/build", { recursive: true }, err => {
+  fs.rm("./web/build", { recursive: true }, err => {
     if (err) {
       throw err;
     }
@@ -28,12 +28,7 @@ const build = async () => {
           publicPath: "web/build",
         }),
         postCssPlugin({
-          plugins: [
-            require("postcss-import"),
-            require("tailwindcss"),
-            require("tailwindcss/nesting"),
-            require("autoprefixer"),
-          ],
+          plugins: [require("postcss-import"), require("tailwindcss"), require("tailwindcss/nesting"), require("autoprefixer")],
         }),
       ],
     })
@@ -43,10 +38,7 @@ const build = async () => {
 build();
 
 if (myArgs.includes("--watch")) {
-  const watcher = chokidar.watch(
-    ["./templates/**/*.*", "./src/js/**/*.*", "./src/css/**/*.*"],
-    {}
-  );
+  const watcher = chokidar.watch(["./templates/**/*.*", "./src/js/**/*.*", "./src/css/**/*.*"], {});
   watcher.on("change", () => {
     build();
   });

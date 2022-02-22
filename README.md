@@ -23,11 +23,11 @@ https://tailwindcss.com
 
 ### Build
 
-ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/js/build/build.js file for the entry points and options. Two primary options are used `--minify` to output minified resources and `--watch` to watch the `./src` and `./templates` directory for changes required a rebuild.
+ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/js/build/build.js file for the entry points and options. Two primary options are used `--minify` to output minified resources and `--watch` to watch the `./src` and `./templates` directory for changes required a rebuild. The build will output versioned js and css files that can be referenced in the build/mix-manifest.json file and is used with TwigPack.
 
 ## Setup
 
-1. run `composer create-project dgrigg/craft-3-boilerplate:v1.2.x [project root]`
+1. run `composer create-project dgrigg/craft-3-boilerplate:v1.3.x [project root]`
 2. create security key `./craft setup/security-key`
 3. install craft `./craft setup`
 4. install plugins `./craft plugin/install ALL`

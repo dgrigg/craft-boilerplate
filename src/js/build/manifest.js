@@ -6,7 +6,6 @@ module.exports = (options = {}) => ({
   name: "manifest",
   setup(build) {
     build.initialOptions.metafile = true;
-    console.log(build.initialOptions);
 
     if (options.hash !== false && !build.initialOptions.entryNames) {
       build.initialOptions.entryNames = "[dir]/[name]-[hash]";

@@ -1,12 +1,9 @@
 export default () => ({
   prop1: true,
-  prop2: "abc",
 
   init() {
-    console.log("this is a change 1");
+    console.log("this is a module");
   },
 
   func1() {},
-
-  func2() {},
 });
