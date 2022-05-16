@@ -27,7 +27,7 @@ ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/
 
 ## Setup
 
-1. run `composer create-project dgrigg/craft-3-boilerplate:v1.3.x [project root]`
+1. run `composer create-project dgrigg/craft-3-boilerplate [project root] dev-master`
 2. create security key `./craft setup/security-key`
 3. install craft `./craft setup`
 4. install plugins `./craft plugin/install ALL`

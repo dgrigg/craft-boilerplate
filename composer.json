@@ -1,7 +1,7 @@
 {
   "name": "dgrigg/craft-3-boilerplate",
   "description": "Craft 3 boilerplate setup, includes basic js/css/esbuild setup",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "authors": [
     {
       "name": "Derrick Grigg",
@@ -22,6 +22,7 @@
     "nystudio107/craft-twigpack": "1.2.15",
     "putyourlightson/craft-blitz": "3.11.1",
     "sebastianlenz/linkfield": "^1.0",
+    "topshelfcraft/wordsmith": "3.3.0.1",
     "verbb/navigation": "1.4.24",
     "verbb/super-table": "2.6.8",
     "vlucas/phpdotenv": "^3.4.0"
