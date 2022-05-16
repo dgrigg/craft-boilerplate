@@ -30,11 +30,12 @@ ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/
 1. run `composer create-project dgrigg/craft-3-boilerplate [project root] dev-master`
 2. create security key `./craft setup/security-key`
 3. install craft `./craft setup`
-4. install plugins `./craft plugin/install ALL`
-5. setup Craft https://docs.craftcms.com/v3/installation.htm
-6. cd into the project root and run `yarn install`
-7. update craft and all plugins `./craft update all`
-8. happy coding
+4. remove the config/license.key file
+5. install plugins `./craft plugin/install ALL`
+6. setup Craft https://docs.craftcms.com/v3/installation.htm
+7. cd into the project root and run `yarn install`
+8. update craft and all plugins `./craft update all`
+9. happy coding
 
 ## Useful Links
 
