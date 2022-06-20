@@ -1,0 +1,45 @@
+{% macro youtubeIFrame(url, options) %}
+  {% set youtubeId = url| youtubeId %}
+  {# autoplay=0&origin={{ siteUrl }}&rel=0 #}
+  <div class="video-wrapper">
+    <iframe id="ytplayer" class="video-frame" type="text/html" src="{{- _self.getYoutubeUrl(url) -}}{{options}}" frameborder="0"></iframe>
+  </div>
+{% endmacro %}
+
+{% macro vimeoIFrame(url, options) %}
+  {% set vimeoId  = url|urlPath %}
+  <div class="video-wrapper">
+    <iframe id="vimeoplayer"  class="video-frame " type="text/html" src="{{- _self.getVimeoUrl(url) -}}{{options}}" frameborder="0"></iframe>
+  </div>
+{% endmacro %}
+
+{% macro getYoutubeUrl(url, options) %}
+  {% set youtubeId = url| youtubeId %}
+  https://www.youtube.com/embed/{{ youtubeId }}{{options}}
+{% endmacro %}
+
+{% macro getVimeoUrl(url, options) %}
+  {% set vimeoId  = url|urlPath %}
+  https://player.vimeo.com/video{{vimeoId}}{{options}}
+{% endmacro %}
+
+{% macro getVideoEmbed(url, options) %}
+  {% spaceless %}
+    {% if "vimeo" in url %}
+      {{ _self.vimeoIFrame(url, options)}}
+    {% elseif "youtube" in url or "youtu.be" in url %}
+      {{ _self.youtubeIFrame(url, options)}}
+    {% endif %}
+  {% endspaceless %}
+{% endmacro %}
+
+{% macro getVideoEmbedUrl(url, options) %}
+  {% spaceless %}
+    {% if "vimeo" in url %}
+      {{ _self.getVimeoUrl(url, options)}}
+    {% elseif "youtube" in url or "youtu.be" in url %}
+      {{ _self.getYoutubeUrl(url, options)}}
+    {% endif %}
+  {% endspaceless %}
+{% endmacro %}
+

@@ -1,0 +1,23 @@
+.cake {
+  @apply w-6 h-6 block;
+  background:url('../../assets/images/cake.svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../assets/fonts/RobotoCondensed-Bold.ttf');
+}
+
+h1 {
+  font-family: 'Roboto Bold';
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Roboto';
+}
