@@ -15,7 +15,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "3.7.27.2",
+    "craftcms/cms": "3.7.55.2",
     "craftcms/redactor": "2.10.3",
     "mmikkel/retcon": "2.3.0",
     "nystudio107/craft-seomatic": "3.4.26",
