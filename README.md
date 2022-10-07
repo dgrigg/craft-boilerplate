@@ -1,6 +1,6 @@
-# Craft 3 Project Setup
+# Craft Project Setup
 
-This is a basic Craft 3 with common plugins and frontend resources I use.
+This is a basic Craft 4 with common plugins and frontend resources I use.
 
 ## Craft Plugins
 
@@ -8,7 +8,6 @@ This is a basic Craft 3 with common plugins and frontend resources I use.
 - Redactor
 - LinkField
 - SEO Matic
-- NEO
 
 ## Frontend
 
@@ -27,13 +26,13 @@ ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/
 
 ## Setup
 
-1. run `composer create-project dgrigg/craft-3-boilerplate [project root] dev-master`
+1. run `composer create-project dgrigg/craft-boilerplate [project root] dev-master`
 2. create security key `./craft setup/security-key`
 3. install craft `./craft setup`
 4. remove the config/license.key file
 5. install plugins `./craft plugin/install ALL`
-6. setup Craft https://docs.craftcms.com/v3/installation.htm
-7. cd into the project root and run `yarn install`
+6. setup Craft https://craftcms.com/docs/4.x/installation.html
+7. cd into the project root and run `npm install`
 8. update craft and all plugins `./craft update all`
 9. happy coding
 

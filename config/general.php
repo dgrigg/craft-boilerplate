@@ -37,22 +37,13 @@ return [
 
   // Dev environment settings
   'dev' => [
-    // Base site URL
-    'siteUrl' => null,
-
     // Dev Mode (see https://craftcms.com/support/dev-mode)
     'devMode' => true,
   ],
 
   // Staging environment settings
-  'staging' => [
-    // Base site URL
-    'siteUrl' => null,
-  ],
+  'staging' => [],
 
   // Production environment settings
-  'production' => [
-    // Base site URL
-    'siteUrl' => null,
-  ],
+  'production' => [],
 ];

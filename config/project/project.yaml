@@ -1,4 +1,4 @@
-dateModified: 1645556411
+dateModified: 1665175922
 email:
   fromEmail: derrick@dgrigg.com
   fromName: Boilerplate
@@ -13,12 +13,21 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: F1DIYS679I7O3D60MSJFH92I
-    schemaVersion: 3.10.0
+    schemaVersion: 4.2.0
+    settings:
+      cacheGeneratorType: putyourlightson\blitz\drivers\generators\HttpGenerator
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\CommerceIntegration
+      refreshMode: 3
+  mix-manifest:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   navigation:
     edition: standard
     enabled: true
     licenseKey: RXFOW3DM28EBVRZFR0FUBJRD
-    schemaVersion: 1.0.21
+    schemaVersion: 2.0.4
   redactor:
     edition: standard
     enabled: true
@@ -35,7 +44,7 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
   twigpack:
     edition: standard
     enabled: true
@@ -43,15 +52,16 @@ plugins:
   typedlinkfield:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true
   name: Boilerplate
-  schemaVersion: 3.7.8
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
