@@ -26,15 +26,18 @@ ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/
 
 ## Setup
 
-1. run `composer create-project dgrigg/craft-boilerplate [project root] dev-master`
-2. create security key `./craft setup/security-key`
-3. install craft `./craft setup`
-4. remove the config/license.key file
-5. install plugins `./craft plugin/install ALL`
-6. setup Craft https://craftcms.com/docs/4.x/installation.html
-7. cd into the project root and run `npm install`
+1. terminal into the docker container
+2. run `composer create-project dgrigg/craft-boilerplate [project root] dev-master`
+3. setup the local site domain and database
+4. create security key `./craft setup/security-key`
+5. install craft `./craft setup`
+6. remove the config/license.key file
+7. install plugins `./craft plugin/install ALL`
 8. update craft and all plugins `./craft update all`
-9. happy coding
+9. setup Craft https://craftcms.com/docs/4.x/installation.html
+10. exit the docker container and return to the local machine
+11. cd into the project root and run `npm install`
+12. happy coding
 
 ## Useful Links
 
