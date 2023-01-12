@@ -3,4 +3,5 @@
 /* for AlpineJs */
 [x-cloak] {
   display: none !important;
+  @apply text-xl;
 }

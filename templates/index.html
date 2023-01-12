@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-
-    <title>New Craft Site</title>
-    {{ craft.twigpack.includeCssModule("/css/styles.css") }}
-  </head>
-  <body class="ltr">
-    <div class="w-96 relative mx-auto mt-10">
-      <div class="w-full h-full rounded-3xl transform shadow-lg bg-gradient-to-br from-green-400 to-blue-500 rotate-1 absolute top-0 left-0"></div>
-      <div class="relative p-5">
-        <div class="relative rounded-3xl shadow-lg bg-white flex items-center justify-center text-center flex-col p-5 py-10">
-          <p class="text-5xl">🥳</p>
-          <h1 class="text-4xl font-bold">Ready to build</h1>
-          <p class="text-3xl ">Go have some fun  </p>
-          <span class="cake"></span>
-        </div>
+{% block main %}
+  <div class="w-96 relative mx-auto mt-10">
+    <div class="w-full h-full rounded-3xl transform shadow-lg bg-gradient-to-br from-green-400 to-blue-500 rotate-1 absolute top-0 left-0"></div>
+    <div class="relative p-5">
+      <div class="relative rounded-3xl shadow-lg bg-white flex items-center justify-center text-center flex-col p-5 py-10">
+        <p class="text-5xl">🥳</p>
+        <h1 class="text-4xl font-bold">Ready to build</h1>
+        <p class="text-3xl ">Go have some fun  </p>
+        <span class="cake"></span>
       </div>
     </div>
-    {{ craft.twigpack.includeJsModule("/js/main.js", true) }}
-  </body>
-</html>
+  </div>
+{% endblock }

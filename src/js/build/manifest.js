@@ -14,28 +14,32 @@ module.exports = (options = {}) => ({
     let mappings = {};
 
     build.onEnd(async result => {
-      for (const outputFilename in result.metafile.outputs) {
-        if (outputFilename != undefined){
-          try {
-            let outputMeta = result.metafile.outputs[outputFilename];
-            if (outputMeta.entryPoint){
-              let sourceFile = path.basename(outputMeta.entryPoint);
-              let destFile = path.basename(outputFilename);
+      try {
+        for (const outputFilename in result.metafile.outputs) {
+          if (outputFilename != undefined){
+            try {
+              let outputMeta = result.metafile.outputs[outputFilename];
+              if (outputMeta.entryPoint){
+                let sourceFile = path.basename(outputMeta.entryPoint);
+                let destFile = path.basename(outputFilename);
 
-              let outputPath = path.dirname(outputFilename);
-              let pattern = `^.*\/*${options.publicPath}`;
+                let outputPath = path.dirname(outputFilename);
+                let pattern = `^.*\/*${options.publicPath}`;
 
-              manifestPath = outputPath.replace(new RegExp(pattern), "");
+                manifestPath = outputPath.replace(new RegExp(pattern), "");
 
-              let source = `${manifestPath}/${sourceFile}`;
-              let dest = `${manifestPath}/${destFile}`;
+                let source = `${manifestPath}/${sourceFile}`;
+                let dest = `${manifestPath}/${destFile}`;
 
-              mappings[source] = dest;
+                mappings[source] = dest;
+              }
+            } catch (error){
+              //console.log(error);
             }
-          } catch (error){
-            console.log(error);
           }
         }
+      } catch (error){
+        //console.log(error);
       }
 
       await writeFile(options.outfile, JSON.stringify(mappings, null, 2));

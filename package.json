@@ -1,6 +1,6 @@
 {
-  "name": "craft-3-boilerplate",
-  "version": "1.3.5",
+  "name": "craft-boilerplate",
+  "version": "1.3.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "autoprefixer": "^10.0.2",
     "chokidar": "^3.5.2",
     "esbuild": "^0.13.12",
+    "node-notifier": "^10.0.1",
     "postcss": "^8.2.14",
     "postcss-import": "^14.0.1",
     "postcss-loader": "^5.0.0",

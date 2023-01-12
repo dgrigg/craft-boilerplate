@@ -9,9 +9,10 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
 
     <title>New Craft Site</title>
-    {{ mix("/css/styles.css") }}
+    <link rel="stylesheet" href="{{ mix("/css/styles.css", "build/manifest.json") }}">
+
   </head>
-  <body class="ltr">
+  <body class="ltr bg-black text-white">
     <header></header>
     <main class="container mx-auto">
       {% block main %}
@@ -19,7 +20,6 @@
       {% endblock %}
     </main>
     <footer></footer>
-
-    {{ mix("/js/main.js") }}
+    <script src="{{ mix('js/main.js', 'build/manifest.json') }}"></script>
   </body>
 </html>

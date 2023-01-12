@@ -1,4 +1,5 @@
 const esbuild = require("esbuild");
+const notifier = require('./notifier.js');
 const fs = require("fs");
 const fse = require("fs-extra");
 const postCssPlugin = require("@deanc/esbuild-plugin-postcss");
@@ -38,9 +39,13 @@ const build = async () => {
         postCssPlugin({
           plugins: [require("postcss-import"), require("postcss-url"), require("tailwindcss"), require("tailwindcss/nesting"), require("autoprefixer")],
         }),
+        notifier(),
       ],
     })
-    .catch(() => process.exit(1));
+    .catch((error) => {
+      //console.log(error);
+      //process.exit(1)
+    });
 };
 
 build();
