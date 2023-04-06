@@ -4,15 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
     <title>New Craft Site</title>
-    <link rel="stylesheet" href="{{ mix("/css/styles.css", "build/manifest.json") }}">
+    {{ craft.mix.withTag('/css/styles.css') | raw }}
 
   </head>
-  <body class="ltr bg-black text-white">
+  <body class="font-body">
     <header></header>
     <main class="container mx-auto">
       {% block main %}
@@ -20,6 +20,6 @@
       {% endblock %}
     </main>
     <footer></footer>
-    <script src="{{ mix('js/main.js', 'build/manifest.json') }}"></script>
+    {{ craft.mix.withTag('/js/main.js') | raw }}
   </body>
 </html>

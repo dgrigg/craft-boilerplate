@@ -1,4 +1,4 @@
-dateModified: 1665175922
+dateModified: 1677864342
 email:
   fromEmail: derrick@dgrigg.com
   fromName: Boilerplate
@@ -19,6 +19,13 @@ plugins:
       integrations:
         - putyourlightson\blitz\drivers\integrations\CommerceIntegration
       refreshMode: 3
+  mix:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      assetPath: build
+      publicPath: web
   mix-manifest:
     edition: standard
     enabled: true
@@ -45,10 +52,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
-  twigpack:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   typedlinkfield:
     edition: standard
     enabled: true

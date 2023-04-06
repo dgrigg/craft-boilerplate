@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.html", "./src/**/*.js", "./templates/**/*.*"],
   theme: {
     fontFamily: {
-      display: ["Gilroy", "sans-serif"],
-      body: ["Graphik", "sans-serif"],
+      display: ["Roboto", "sans-serif"],
+      body: ["Roboto", "sans-serif"],
     },
     extend: {},
   },

@@ -6,44 +6,20 @@
  * All of your system's general configuration settings go in here. You can see a
  * list of the available settings in vendor/craftcms/cms/src/config/GeneralConfig.php.
  *
- * @see craft\config\GeneralConfig
+ * @see \craft\config\GeneralConfig
  */
 
-return [
-  // Global settings
-  '*' => [
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 0,
+use craft\config\GeneralConfig;
+use craft\helpers\App;
 
-    // Enable CSRF Protection (recommended)
-    'enableCsrfProtection' => true,
-
-    // Whether generated URLs should omit "index.php"
-    'omitScriptNameInUrls' => true,
-
-    // Control Panel trigger word
-    'cpTrigger' => 'admin',
-
-    // The secure key Craft will use for hashing and encrypting data
-    'securityKey' => getenv('SECURITY_KEY'),
-
-    'aliases' => [
-      '@web' =>  getenv('PRIMARY_SITE_URL'),
-      '@webroot' => dirname(__DIR__) . '/web',
-      '@assetBaseUrl' => '@web/uploads',
-      '@assetBasePath' => '@webroot/uploads',
-    ],
-  ],
-
-  // Dev environment settings
-  'dev' => [
-    // Dev Mode (see https://craftcms.com/support/dev-mode)
-    'devMode' => true,
-  ],
-
-  // Staging environment settings
-  'staging' => [],
-
-  // Production environment settings
-  'production' => [],
-];
+return GeneralConfig::create()
+  // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
+  ->defaultWeekStartDay(1)
+  // Prevent generated URLs from including "index.php"
+  ->omitScriptNameInUrls()
+  // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+  ->devMode(App::env('DEV_MODE') ?? false)
+  // Allow administrative changes
+  ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
+  // Disallow robots
+  ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false);

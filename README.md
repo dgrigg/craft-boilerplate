@@ -22,7 +22,7 @@ https://tailwindcss.com
 
 ### Build
 
-ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/js/build/build.js file for the entry points and options. Two primary options are used `--minify` to output minified resources and `--watch` to watch the `./src` and `./templates` directory for changes required a rebuild. The build will output versioned js and css files that can be referenced in the build/mix-manifest.json file and is used with TwigPack.
+ESbuild is used to compile and bundle the CSS and Js files. Reference the ./src/js/build/build.js file for the entry points and options. Two primary options are used `--minify` to output minified resources and `--watch` to watch the `./src` and `./templates` directory for changes required a rebuild. The build will output versioned js and css files that can be referenced in the build/mix-manifest.json file and is used with Mix to in the Twig layout to load.
 
 ## Setup
 
