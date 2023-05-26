@@ -15,7 +15,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "4.3.10",
+    "craftcms/cms": "4.4.6.1",
     "craftcms/redactor": "3.0.3",
     "misterbk/mix": "^1.6",
     "mmikkel/retcon": "2.6.1",
